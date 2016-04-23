@@ -32,6 +32,10 @@ div#header #navigation a {
     text-transform: uppercase;
 }
 
+div#header #navigation img {
+    height: 18px;
+}
+
 div#footer {
     border-top: solid 2px black;
     color: #555;
