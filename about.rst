@@ -3,6 +3,9 @@ title: About
 ---
 I am currently studying Computer Science and working at Unity Aps.
 
+I have a general interest in a lot of computer science related topics, but at the moment I am most interested in programming languages.
+This includes both the design (semantics, types) and the implementation.
+
 .. figure:: https://projecteuler.net/profile/christiankjaer.png
 
 Experience
