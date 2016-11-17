@@ -11,7 +11,13 @@ Experience
 **2016 - 2017:**
   **Teaching Assistant - University of Copenhagen**
 
-  Teaching exercise classes and grading assignments in the course *Introduction to Computer Systems*
+  Teaching exercise classes and grading assignments in the course *Introduction to Computer Systems*. The course teaches subjects such as
+
+  - Machine architecture
+
+  - Operating systems
+
+  - Computer networks
 
 **2015 - 2016:**
   **Student Worker - Unity Technologies**
