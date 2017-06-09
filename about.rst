@@ -20,6 +20,9 @@ Experience
 
 Education
 ---------
+**2017 - 2019 (expected):**
+  **MSc in Computer Science - University of Copenhagen**
+
 **2014 - 2017:**
   **BSc in Computer Science - University of Copenhagen**
 
