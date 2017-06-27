@@ -16,17 +16,39 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
 
-    match (fromList ["index.md", "about.rst", "articles.rst"]) $ do
+    match (fromList ["index.md", "about.rst"]) $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
+    match "articles/*" $ do
+        route   $ setExtension "html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/article.html" defaultContext
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= relativizeUrls
+
+    create ["articles.html"] $ do
+        route $ idRoute
+        compile $ do
+            articles <- recentFirst =<< loadAll "articles/*"
+            let overviewCtx =
+                    listField "articles" defaultContext (return articles) `mappend`
+                    constField "title" "Articles" `mappend`
+                    defaultContext
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/articles.html" overviewCtx
+                >>= loadAndApplyTemplate "templates/default.html" overviewCtx
+                >>= relativizeUrls
+        
+
     match "templates/*" $ compile templateBodyCompiler
 
 
 --------------------------------------------------------------------------------
-postCtx :: Context String
-postCtx =
+articleCtx :: Context String
+articleCtx =
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
