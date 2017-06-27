@@ -25,8 +25,8 @@ main = hakyll $ do
     match "articles/*" $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/article.html" defaultContext
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= loadAndApplyTemplate "templates/article.html" articleCtx
+            >>= loadAndApplyTemplate "templates/default.html" articleCtx
             >>= relativizeUrls
 
     create ["articles.html"] $ do
@@ -34,7 +34,7 @@ main = hakyll $ do
         compile $ do
             articles <- recentFirst =<< loadAll "articles/*"
             let overviewCtx =
-                    listField "articles" defaultContext (return articles) `mappend`
+                    listField "articles" articleCtx (return articles) `mappend`
                     constField "title" "Articles" `mappend`
                     defaultContext
 
