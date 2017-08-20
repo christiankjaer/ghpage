@@ -1,13 +1,17 @@
 ---
 title: About me
 ---
-I am currently studying Computer Science and working as a TA.
+I am currently studying Computer Science and working as a Student Software Developer.
 
 I have a general interest in a lot of computer science related topics, but at the moment I am most interested in programming languages.
 This includes both the design (semantics, types) and the implementation.
 
 Experience
 ----------
+
+**2017 - ?:**
+  **Student Software Developer - Lendino**
+
 **2016 - 2017:**
   **Teaching Assistant - University of Copenhagen**
 
