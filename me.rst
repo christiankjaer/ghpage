@@ -12,6 +12,20 @@ Experience
 **2017 - ?:**
   **Student Software Developer - Lendino**
 
+**2018:**
+  **Teaching Assistant - University of Copenhagen**
+
+  Teaching exercise classes and grading assignments in the course *Programming Language Design*. The course teaches subjects such as
+
+  - History of programming languages
+
+  - Implementation strategies for programming languages
+
+  - The design space of programming languages
+
+  - Domain specific languages
+   
+
 **2016 - 2017:**
   **Teaching Assistant - University of Copenhagen**
 
@@ -32,6 +46,25 @@ Education
 ---------
 **2017 - 2019 (expected):**
   **MSc in Computer Science - University of Copenhagen**
+
+  Courses in
+
+  - Advanced algorithms and complexity theory
+
+  - Machine Learning
+
+  - Programming language theory
+
+**2018 - 2019:**
+  **Msc in Informatics - Technical University of Munich**
+
+  Erasmus exchange for one semester. Courses in
+
+  - Compiler optimizations
+
+  - Programming language design and implementation
+
+  - Code generation techniques
 
 **2014 - 2017:**
   **BSc in Computer Science - University of Copenhagen**
